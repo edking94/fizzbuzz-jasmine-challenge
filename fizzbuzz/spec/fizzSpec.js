@@ -1,32 +1,34 @@
-describe("my fizzBuzz fuction", function() {
+describe("my fizzbuzz function", function() {
 
-    beforeEach(function(){
-        fizzbuzz = new fizzBuzz();
+       beforeEach(function() {
+        fizzbuzz = new fizzBuzz()
     });
 
-    describe("Returns Fizz, Buzz, number of FizzBuzz", function() {
+    describe("Returns number, fizz, fizzbuzz, buzz", function() {
+
+
         it("should exist", function() {
-            expect(fizzBuzz).toBeDefined();
+            expect(fizzBuzz).toBeDefined()
         });
 
-        it("should return FizzBuzz when called as fizzBuzz(15)", function() {
-        var result = fizzBuzz(15)
-        expect(result).toBe("FizzBuzz")
+        it("should return FizzBuzz when called as fizzbuzz(15)", function() {
+            var result = fizzBuzz(15)
+            expect(result).toBe("FizzBuzz");
         });
 
-        it("should return Fizz when called as fizzBuzz(9)", function() {
-        var result = fizzBuzz(9)
-        expect(result).toBe("Fizz")
+        it("should return Fizz when called as fizzbuzz(9)", function() {
+            var result = fizzBuzz(9)
+            expect(result).toBe("Fizz");
         });
 
-        it("should return Buzz when called as fizzBuzz(10)", function() {
+        it("should return Buzz when called as fizzbuzz(10)", function() {
             var result = fizzBuzz(10)
-            expect(result).toBe("Buzz")
+            expect(result).toBe("Buzz");
         });
 
-        it("should return 2 when called as fizzBuzz(2)", function() {
+        it("should return number when called as fizzbuzz(0)", function() {
             var result = fizzBuzz(2)
-            expect(result).toBe(2)
-        });
+            expect(result).toBe(2);
+        }); 
     });
-})
+});
